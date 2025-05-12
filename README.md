@@ -1,7 +1,25 @@
 # WeatherNueralNetwork
-I've been told to do something interesting with a Neural Network so I wanted to see if I could improve on a dataset that
-I've already used before. The dataset I wished to improve accuracy on was a weather classification dataset.
-After getting the dataset into a readable format for the machine learning, I began testing an Artificial Neural Network Model.
-I noticed after running for at first 10 epochs but later 50 that the mean squared error reduced to about 0.8 and begins to
-bounce around the number, as such while the neural network was not able to outperform either the bagging classifier (Using SVC) or the random
-forest it did manage to get quite close.
+
+This project applies a Neural Network in order to predict the weather given a multitude of parameters. The goal of this project is to compare how a neural network compares the Mean-Squared-Error
+of this model to the Mean-Squared Error of both Random Forest Classifier and Bagging Classifier (SVC).
+
+---
+
+## Dataset
+
+- https://www.kaggle.com/datasets/nikhil7280/weather-type-classification
+- Name : Weather Type Classification
+- Author : Nikhil Narayan
+- All features were utilized
+  - Label Variable was `Weather Type` 
+
+---
+
+## File Overview
+
+- `Output.py` : Model Training and Evaluation.
+- `Weather Cleaning.py` : File cleans and creates the train and validation sets for training.
+- `weater_classification_data.csv` : Full Dataset from Kaggle.
+- `train_set.csv` : Train set for Model.
+- `validate_set.csv` : Validation set for Model.
+- `README.md` : Your reading it right now!
